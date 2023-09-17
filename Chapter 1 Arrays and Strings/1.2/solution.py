@@ -1,6 +1,22 @@
 def check_permutation(str1: str, str2: str) -> bool:
     """
     Determines whether one string is a permutation of another string.
+
+    Parameters
+    ----------
+    str1 : str
+        The first string.
+    str2 : str
+        The second string.
+
+    Returns
+    -------
+    bool
+        True if str1 is a permutation of str2, False otherwise.
+
+    Time Complexity: O(n + m), where n and m are the lengths of str1 and str2,
+        respectively.
+    Space Complexity: O(n), where n is the length of str1.
     """
     if len(str1) != len(str2):
         return False
